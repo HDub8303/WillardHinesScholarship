@@ -1,39 +1,20 @@
-# Review report
+# Review and validation
 
-## Corrections completed
+## Final website
 
-- Created missing `index.html` using the supplied biography and existing design.
-- Moved stylesheets and JavaScript into their referenced `css/` and `js/` folders.
-- Included all nine downloadable source images and a local Instagram SVG.
-- Removed gallery entries 7–9 because no source images were supplied for them.
-- Added the missing page stylesheet to About.
-- Replaced JavaScript that falsely reported successful submissions and reset application data. Both incomplete forms now have disabled fieldsets, POST methods, clear notices, email alternatives, and a submission guard.
-- Removed the lazy-loading code that overwrote image URLs with absent `data-src` values.
-- Removed unsafe bare-anchor selector handling and the scroll effect that faded out the hero.
-- Added navigation ARIA state, Escape handling, keyboard-accessible dropdowns, current-page detection at project URLs, a skip link, and reduced-motion styles.
-- Improved mobile sizing, button fit, email wrapping, and menu scrolling.
-- Removed the Wix Facebook link and generic PayPal payment destination.
-- Replaced incomplete address and tax details with contact instructions. Marked giving levels illustrative.
-- Replaced dates with no application year with contact instructions.
-- Removed unverified press article attributions and nonexistent downloads; added resource request links.
-- Added `.nojekyll`, `.gitignore`, and accurate publishing documentation. Hardened the optional image downloader.
+Nine static pages are ready to upload to a GitHub repository. The final theme matches the supplied screenshot references: light gray, red, black, serif headings, circular links, framed logo, photo-led layouts, thumbnail galleries and a compact red footer.
 
-## Validation completed
+Included assets: 66 raster images, local Instagram SVG and two historical PDFs. The interactive gallery contains 57 unique source photos. The homepage has three separate photo viewers. Application downloads and direct email links are available. The contact form is visibly disabled until a real delivery endpoint is configured.
 
-- Checked nine HTML pages and all 215 local file references: no missing files.
-- Checked local anchor targets and duplicate IDs: no errors.
-- Decoded and verified all 66 raster images.
-- JavaScript syntax passed `node --check`.
-- Download script syntax passed `bash -n`.
+Source references and transcription limits are documented in THEME_REFERENCE.md and SOURCE_ASSETS.md. Current scholarship dates and rules need owner confirmation. Donation details come from the supplied screenshot. No tax status was independently verified. No repository was created or site published.
 
-Browser rendering and interactive tests could not be completed: Chromium is not installed and its download returned an invalid archive. Check desktop and mobile views after publication, including navigation, image framing, and forms. External social links, mailbox ownership, and real submission delivery were not verified.
+## Checks
 
-## Owner verification still required
+- Nine HTML pages and all 418 local asset/link references exist.
+- No duplicate IDs or missing local anchor targets were found.
+- Every image has an alt attribute.
+- All 66 raster images decoded and passed file verification.
+- JavaScript syntax passed Node's syntax check.
+- Optional image download script syntax passed Bash's syntax check.
 
-Confirm scholarship requirements, benefits and content; contact details; donation recipient and tax documentation; image permissions and gallery captions. Forms need a genuine backend before accepting online submissions. Add actual press sources and a Facebook link when available.
-
-This is a static hosting package, not a configured application-processing or payment system. No GitHub repository was created and no site was published.
-
-## Additional source update
-
-Added 57 unique archive photos and two original historical PDFs. Scholarship Awards, Guidelines, Apply, and Press now use these sources with explicit historical labels. The inaccurate generic application preview was replaced with a historical PDF download and a request for current instructions. See SOURCE_ASSETS.md. Current dates, donation details, and online submissions remain unconfigured.
+Browser rendering and interaction testing remain unverified because the browser download returned an invalid archive. Check the desktop and mobile layout, dropdown navigation and thumbnail viewers after previewing or publishing. External destinations and actual form delivery were not tested.
