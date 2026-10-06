@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+mkdir -p images
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/WJH_Logo.png.tmp" "https://static.wixstatic.com/media/ef78ed_30b247ef3e6b4c1db9cbfc5cb6e6cd41~mv2.png"
+mv "images/WJH_Logo.png.tmp" "images/WJH_Logo.png"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/WJH_Home.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_db15335cdaab49259c3637735e3cad40~mv2.jpg"
+mv "images/WJH_Home.jpg.tmp" "images/WJH_Home.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/WJH_Signature.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_efa8121ca0e3456fa8cff48f2c8d6353~mv2.jpg"
+mv "images/WJH_Signature.jpg.tmp" "images/WJH_Signature.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-1.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_43553a1a45164cba963c12af36b962ea~mv2.jpg"
+mv "images/gallery-1.jpg.tmp" "images/gallery-1.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-2.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_eb36fdc8816143a4ad132c0596d2aed0~mv2.jpg"
+mv "images/gallery-2.jpg.tmp" "images/gallery-2.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-3.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_2e661f79f85a4b5497a8696d6715d5d5~mv2.jpg"
+mv "images/gallery-3.jpg.tmp" "images/gallery-3.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-4.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_157c52c2d87d48cf83358cc05559257b~mv2.jpg"
+mv "images/gallery-4.jpg.tmp" "images/gallery-4.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-5.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_a9a915b364b84a448a7ecdca13ad5561~mv2.jpg"
+mv "images/gallery-5.jpg.tmp" "images/gallery-5.jpg"
+curl --fail --location --retry 2 --connect-timeout 15 --max-time 90 --output "images/gallery-6.jpg.tmp" "https://static.wixstatic.com/media/ef78ed_ae83a407c5a946998885728b4db6772e~mv2.jpg"
+mv "images/gallery-6.jpg.tmp" "images/gallery-6.jpg"
+echo "Source images downloaded. Instagram SVG is included separately."
